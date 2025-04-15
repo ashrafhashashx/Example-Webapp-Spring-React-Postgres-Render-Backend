@@ -1,1 +1,16 @@
+# Gradle
 .gradle/
+build/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Java
+*.class
+
+# Logs
+*.log
+
+# System files
+.DS_Store
