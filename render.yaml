@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: spring-backend
+    env: java
+    buildCommand: "./gradlew clean build"
+    startCommand: "java -jar build/libs/taskmanager-1.0.0.jar"
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        fromDatabase:
+          name: your-db-name
+          property: connectionString
+      - key: SPRING_DATASOURCE_USERNAME
+        fromDatabase:
+          name: your-db-name
+          property: user
+      - key: SPRING_DATASOURCE_PASSWORD
+        fromDatabase:
+          name: your-db-name
+          property: password
