@@ -1,6 +1,3 @@
-# test-webapp-spring-react-postgre
-test-webapp-spring-react-postgre
-
 # Spring Boot Deploy (Render w/ Docker)
 
 1. Push the code to GitHub
