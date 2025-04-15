@@ -6,3 +6,5 @@ out
 Dockerfile
 README.md
 *.iml
+.idea
+*.log
