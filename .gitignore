@@ -14,3 +14,5 @@ build/
 
 # System files
 .DS_Store
+
+# I do not wan't to include .env. I am still learning.
