@@ -15,8 +15,13 @@ public class CORSConfig {
         // Create the CORS configuration
         CorsConfiguration corsConfig = new CorsConfiguration();
         corsConfig.setAllowCredentials(true);
-//        corsConfig.addAllowedOrigin("https://my-react-app-py6s.onrender.com"); // React app's URL on Render
+        // The following line is basically who is allowed to use this backend. When I deploy it on Render, for example,
+        // I will just set an environment variable when filling out the form on the website. instead of just hard-coding at
+        // something like this:
+        // corsConfig.addAllowedOrigin("https://my-react-app-py6s.onrender.com"); // React app's URL on Render for example
+        // So, this is just for the local testing:
         corsConfig.addAllowedOrigin("http://localhost:3000"); // React app on my computer
+        corsConfig.addAllowedOrigin("${CORSCONFIG_ALLOWING_REACT_APP}"); // React app on my computer
         corsConfig.addAllowedHeader("*");
         corsConfig.addAllowedMethod("*");
 
