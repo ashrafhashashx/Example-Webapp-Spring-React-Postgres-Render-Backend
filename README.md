@@ -7,5 +7,3 @@
    - `SPRING_DATASOURCE_USERNAME`
    - `SPRING_DATASOURCE_PASSWORD`
 4. Render auto-detects Dockerfile and deploys!
-# Example-Webapp-Spring-React-Postgres-Render-Backend
-# Example-Webapp-Spring-React-Postgres-Render-Backend
