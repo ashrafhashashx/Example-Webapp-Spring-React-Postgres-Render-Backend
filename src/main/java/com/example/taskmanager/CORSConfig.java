@@ -15,7 +15,8 @@ public class CORSConfig {
         // Create the CORS configuration
         CorsConfiguration corsConfig = new CorsConfiguration();
         corsConfig.setAllowCredentials(true);
-        corsConfig.addAllowedOrigin("https://my-react-app-py6s.onrender.com"); // React app's URL
+//        corsConfig.addAllowedOrigin("https://my-react-app-py6s.onrender.com"); // React app's URL on Render
+        corsConfig.addAllowedOrigin("http://localhost:3000"); // React app on my computer
         corsConfig.addAllowedHeader("*");
         corsConfig.addAllowedMethod("*");
 
